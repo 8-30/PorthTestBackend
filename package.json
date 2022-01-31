@@ -1,0 +1,26 @@
+{
+  "name": "porthtestbackend",
+  "version": "1.0.0",
+  "description": "Este es el backend del la apliacion test de PORTH",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8-30/PorthTestBackend.git"
+  },
+  "author": "Daniel Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/8-30/PorthTestBackend/issues"
+  },
+  "homepage": "https://github.com/8-30/PorthTestBackend#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
