@@ -1,1 +1,7 @@
-POST  http://localhost:3000/api/message/save
+POST  http://localhost:3000/api/messages/
+content-type: application/json
+
+{
+    "sender": "Emisor2",
+    "text": "Mensaje2"
+}
