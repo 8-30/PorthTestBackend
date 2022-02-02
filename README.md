@@ -32,7 +32,7 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 cd PorthTestBackend
 npm install
-npm run dev
+npm start
 ```
 
 to run the tests
