@@ -9,12 +9,6 @@ const bp = require('body-parser')
 const cors = require('cors')
 
 const app = express();
-const server = http.createServer(app);
-
-
-//settings
-app.set('port', process.env.PORT || 3000);
-
 
 //middlewares
 app.use(cors());
@@ -26,10 +20,13 @@ app.use(bp.urlencoded({ extended: true }))
 //
 app.use('/api/messages',messageRoutes)
 
+//settings
+const PORT = process.env.PORT || 3000
 //starting server
-server.listen(app.get('port'),()=>{
-    console.log("server on port ",app.get('port'))
-})
+const server = app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`)
+  })
 
 
 
+module.exports = {app,server}

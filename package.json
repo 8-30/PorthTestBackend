@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "express": "^4.17.2",
-    "node-json-db": "^1.4.1"
+    "jest": "^27.4.7",
+    "node-json-db": "^1.4.1",
+    "supertest": "^6.2.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
